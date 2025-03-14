@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MWALIMU AUTOMOBILE</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="js/login.js" defer></script>
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-form login-form active">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <input type="email" id="loginEmail" name="loginEmail" required>
+                    <label for="loginEmail">Email</label>
+                    <!-- <i class='bx bxs-envelope'></i> -->
+                </div>
+                <div class="input-group">
+                    <input type="password" id="loginPassword" name="loginPassword" required>
+                    <label for="loginPassword">Password</label>
+                    <!-- <i class='bx bxs-lock-alt'></i> -->
+                </div>
+                <div class="form-options">
+                    <label><input type="checkbox" name="rememberMe"> Remember Me</label>
+                    <a href="forgot_password.html">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="switch-form">
+                    Don't have an account? <a href="create.html">Create Account</a>
+                </div>
+                <div id="loginMessage" class="form-message"></div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
