@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - MWALIMU AUTOMOBILE</title>
+    <link rel="stylesheet" href="css/create.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="js/create.js" defer></script>
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-form create-account-form active">
+            <h2>Create Account</h2>
+            <form id="createAccountForm">
+                <div class="input-group">
+                    <input type="text" id="registerName" name="registerName" required>
+                    <label for="registerName">Name</label>
+                    <!-- <i class='bx bxs-user'></i> -->
+                </div>
+                <div class="input-group">
+                    <input type="email" id="registerEmail" name="registerEmail" required>
+                    <label for="registerEmail">Email</label>
+                    <!-- <i class='bx bxs-envelope'></i> -->
+                </div>
+                <div class="input-group">
+                    <input type="password" id="registerPassword" name="registerPassword" required>
+                    <label for="registerPassword">Password</label>
+                    <!-- <i class='bx bxs-lock-alt'></i> -->
+                </div>
+                <div class="input-group">
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <label for="confirmPassword">Confirm Password</label>
+                    <!-- <i class='bx bxs-lock-alt'></i> -->
+                </div>
+                <button type="submit" class="btn">Create Account</button>
+                <div class="switch-form">
+                    Already have an account? <a href="login.html">Login</a>
+                </div>
+                <div id="registerMessage" class="form-message"></div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

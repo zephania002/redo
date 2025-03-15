@@ -1,0 +1,65 @@
+.settings-section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.settings-section h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.settings-form {
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.settings-form .form-group {
+    margin-bottom: 20px;
+}
+
+.settings-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.settings-form .form-group input[type="text"],
+.settings-form .form-group input[type="email"],
+.settings-form .form-group input[type="checkbox"],
+.settings-form .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.settings-form .btn {
+    margin-top: 20px;
+}
+
+.settings-form .form-message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.settings-form .form-message.success {
+    background-color: #e6ffe6;
+    color: #38761d;
+    border: 1px solid #c3e6cb;
+}
+
+.settings-form .form-message.error {
+    background-color: #ffe6e6;
+    color: #cc0000;
+    border: 1px solid #e0b0b0;
+}

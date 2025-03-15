@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MWALIMU AUTOMOBILE</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+   
+    <header>
+      
+        <div class="nav container">
+         
+            <i class='bx bx-menu' id="menu-icon"></i>
+            
+            <a href="#" class="logo">
+                <img src="img/background.jpg" alt="Logo">
+                <span></span>
+            </a>
+            
+           
+            <ul class="navbar">
+                <li> <a href="#home" class="active">Home</a></li>
+                <li> <a href="#cars">Cars</a></li>
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#parts">Info</a></li>
+                <li> <a href="#blog">Our Blog</a></li>
+                <li> <a href="login/login.html">Login</a></li>
+            </ul>
+            
+            <i class='bx bx-search' id="search-icon"></i>
+        
+            <div class="search-box container">
+                <input type="search" name="" id="" placeholder="Search here...">
+            </div>
+        </div>
+    </header>
+ 
+<section class="home" id="home">
+    <div class="home-container">
+        <div class="home-text fade-in">
+            <h1>Find Your <span>Perfect Car</span> <br> at the Best Price</h1>
+            <p>
+                <b>Mwalimu Automobile</b> is East Africa’s marketplace for <br>buying and selling <b>new</b> and <b>used cars</b>.  
+                <br>Over 50+ popular makes and models available, including <br>Toyota, BMW, Mitsubishi, Hyundai, Mercedes Benz, and more.
+            </p>
+            <!-- Home Button -->
+            <a href="#" class="btn">Explore Cars</a>
+        </div>
+        
+       
+    </div>
+</section>
+
+    <!--cars section-->
+    <section class="cars" id="cars">
+        <div class="heading">
+            <span class="fade-in">All Cars</span>
+            <h2 class="slide-in">Find Your Dream Car Today</h2>
+            <p class="fade-in">
+                Discover a variety of high-quality <b>new</b> and <b>used</b> cars that match your style and budget.
+            </p>
+        </div>
+    
+        <!-- Cars Container -->
+        <div class="cars-container container">
+            <!-- Car 1 -->
+            <div class="box">
+                <img src="img/MERCEDES-GLE53.jpg" alt="Mercedes-GLE53">
+                <div class="car-info">
+                    <h2>Mercedes-GLE53</h2>
+                    <p>Luxury SUV with superior performance and design.</p>
+                    <button class="btn view-details" data-id="1">View Details</button>
+                </div>
+            </div>
+    
+            <!-- Car 2 -->
+            <div class="box">
+                <img src="img/car2.jpg" alt="AUDI M8">
+                <div class="car-info">
+                    <h2>AUDI M8</h2>
+                    <p>Elegant, powerful, and equipped with the latest tech.</p>
+                    <button class="btn view-details" data-id="2">View Details</button>
+                </div>
+            </div>
+    
+            <!-- Add more cars with unique data-ids -->
+        </div>
+    </section>
+
+    <section class="search-inventory" id="search-inventory">
+        <div class="heading">
+            <span>Find Your Perfect Match</span>
+            <h2>Search Our Vehicle Inventory</h2>
+            <p>Refine your search using the criteria below to find the car that meets your exact needs.</p>
+        </div>
+        <div class="search-form-container container">
+            <form id="inventory-search-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="year">Year:</label>
+                        <select id="year" name="year">
+                            <option value="">Any Year</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="make">Make:</label>
+                        <select id="make" name="make">
+                            <option value="">Any Make</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Mitsubishi">Mitsubishi</option>
+                            <option value="Hyundai">Hyundai</option>
+                            <option value="Mercedes-Benz">Mercedes-Benz</option>
+                            <option value="Audi">Audi</option>
+                            </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="model">Model:</label>
+                        <input type="text" id="model" name="model" placeholder="Enter Model (Optional)">
+                    </div>
+                    <div class="form-group">
+                        <label for="condition">Condition:</label>
+                        <select id="condition" name="condition">
+                            <option value="">Any Condition</option>
+                            <option value="New">New</option>
+                            <option value="Used">Used</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="mileage_min">Mileage Range:</label>
+                        <div class="range-input">
+                            <input type="number" id="mileage_min" name="mileage_min" placeholder="Min">
+                            <span>-</span>
+                            <input type="number" id="mileage_max" name="mileage_max" placeholder="Max">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="transmission">Transmission:</label>
+                        <select id="transmission" name="transmission">
+                            <option value="">Any</option>
+                            <option value="Automatic">Automatic</option>
+                            <option value="Manual">Manual</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="price_min">Price Range (KES):</label>
+                        <div class="range-input">
+                            <input type="number" id="price_min" name="price_min" placeholder="Min">
+                            <span>-</span>
+                            <input type="number" id="price_max" name="price_max" placeholder="Max">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        </div>
+                </div>
+                <button type="button" class="btn" id="search-inventory-btn">Search Inventory</button>
+            </form>
+        </div>
+        <div id="search-results-container" class="container">
+            </div>
+    </section>
+    
+    <!-- Modal for Car Details -->
+    <div id="car-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-img" src="" alt="Car Image">
+            <p><strong>Price:</strong> <span id="modal-price"></span></p>
+            <p><strong>Year:</strong> <span id="modal-year"></span></p>
+            <p><strong>Engine:</strong> <span id="modal-engine"></span></p>
+            <p><strong>Fuel Type:</strong> <span id="modal-fuel"></span></p>
+            <p><strong>Transmission:</strong> <span id="modal-transmission"></span></p>
+            <p><strong>Features:</strong> <span id="modal-features"></span></p>
+        </div>
+    </div>
+    
+    
+
+    <!--About-->
+    <section class="about container" id="about">
+        <div class="about-content">
+            <div class="about-img">
+                <img src="img/background.jpg" alt="About Mwalimu Automobile">
+            </div>
+            <div class="about-text">
+                <span class="fade-in">About Us</span>
+                <h2 class="slide-in">Affordable Prices with <br> <span>Top-Quality Cars</span></h2>
+                <p class="fade-in">
+                    With hundreds of new and used makes and models to choose from, 
+                    <b><i>MWALIMU AUTOMOBILE</i></b> is East Africa's leading 
+                    marketplace for buying and selling <b><i>NEW</i></b>, <b><i>USED CARS</i></b>, and <b><i>SUVs</i></b>. 
+                    <br>Our interactive website makes car transactions <b>fast</b>, <b>intuitive</b>, and <b>reliable</b>. 
+                    <b><i>MWALIMU AUTOMOBILE</i></b> lets you search and compare cars to find the perfect match for your 
+                    needs and budget.
+                </p>
+                
+                <!-- About Button -->
+                <a href="#" class="btn btn-animated">Learn More</a>
+            </div>
+        </div>
+    </section>
+    
+    </section>
+    <!--parts section-->
+    <section class="parts" id="Info">
+        <div class="heading">
+            <span>What We Offer</span>
+            <h2>Our cars are Always Excellent</h2>
+            <!-- <p>At MWALIMU AUTOMOBILE, we provide a wide selection of new and used cars, SUVs, and trucks to match every budget and preference. Our platform offers a seamless car-buying and selling experience, ensuring reliability, transparency, and convenience. Whether you're looking for a brand-new vehicle, a quality second-hand car, or financing options, we've got you covered. We also provide vehicle inspection services, trade-in options, and expert advice to help you make the best decision.
+                <br>With our user-friendly website and dedicated customer support, buying and selling cars has never been easier!</p> -->
+        </div>
+        <!--parts container-->
+        <div class="parts-container container">
+            <!--Box 1-->
+
+            <div class="box">
+                <img src="img/ALL BRAND.jpg" alt="">
+                <h3>ALL BRANDS AVAIABLE</h3>
+                <span>Over 50+ popular brands and models of foreign used cars available</span>
+                
+                <a href="#" class="details">View Details</a>
+            </div>
+
+               <!--Box 2-->
+
+               <div class="box">
+                <img src="img/queation.jpg" alt="">
+                <h3>#ASKMWALIMU</h3>
+                <span>Got a Question about cars? <br> Our experts are waiting for your Email us now!!</span>
+               
+            </div>
+
+               <!--Box 3-->
+
+               <div class="box">
+                <img src="img/check.jpg" alt="">
+                <h3>VEHICLE CHECK</h3>
+                <span>Uncover a vehicle's history so that you can purchase with confidence</span>
+                
+            </div>
+
+        </div>
+    </section>
+    <!--Blog Container-->
+    <section class="reviews" id="our Blog">
+        <div class="heading">
+            <span>Customer Testimonials</span>
+            <h2>What Our Clients Say About Us</h2>
+            <p>Hear from our satisfied customers who found their dream cars with Mwalimu Automobile.</p>
+        </div>
+    
+        <!-- Reviews Container -->
+        <div class="reviews-container container">
+            <!-- Review 1 -->
+            <div class="box">
+                <img src="img/admin.jpg" alt="Customer 1">
+                <span>March 14, 2025</span>
+                <h3>John Ouma</h3>
+                <p>"Mwalimu Automobile helped me find the perfect SUV at an unbeatable price. The process was smooth, and their customer service is top-notch!"</p>
+                <div class="stars">
+                    ⭐⭐⭐⭐⭐
+                </div>
+            </div>
+    
+            <!-- Review 2 -->
+            <div class="box">
+                <img src="img/admin.jpg" alt="Customer 2">
+                <span>March 14, 2025</span>
+                <h3>Aisha Mohammed</h3>
+                <p>"I was worried about financing, but their flexible payment options made it easy to own my dream car. Highly recommended!"</p>
+                <div class="stars">
+                    ⭐⭐⭐⭐⭐
+                </div>
+            </div>
+    
+            <!-- Review 3 -->
+            <div class="box">
+                <img src="img/admin.jpg" alt="Customer 3">
+                <span>March 14, 2025</span>
+                <h3>Kevin Otieno</h3>
+                <p>"Excellent customer support and a great selection of cars. I love my new BMW, and I’ll definitely be back for my next upgrade!"</p>
+                <div class="stars">
+                    ⭐⭐⭐⭐⭐
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!--footer-->
+    <!-- Modern Animated Footer -->
+    <footer class="footer landscape-footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <a href="#" class="logo">
+                    <img src="img/background.jpg" alt="Logo">
+                    <span>MWALIMU AUTOMOBILE</span>
+                </a>
+                <p class="tagline">Your trusted marketplace for new & used cars.</p>
+                <div class="social">
+                    <a href="#" title="Facebook"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" title="Twitter"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" title="Instagram"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" title="YouTube"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+            <div class="footer-middle-landscape">
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Cars</a></li>
+                            <li><a href="#">Info</a></li>
+                            <li><a href="#">Our Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                            <li><a href="#">Cookies Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <ul class="contact-info">
+                            <li><i class='bx bxs-map-pin'></i> Nairobi, Kenya</li>
+                            <li><i class='bx bxs-phone-call'></i> +254 710 689 321</li>
+                            <li><i class='bx bxs-envelope'></i> info@mwalimuautomobile.co.ke</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-subscribe">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for the latest car listings and deals.</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Your Email Address">
+                        <button type="submit" class="btn primary-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Mwalimu Automobile. All Rights Reserved.</p>
+        </div>
+    </footer>   
+
+    <!--Link To JS-->
+    <script src="main.js"></script>
+    
+</body>
+</html>
