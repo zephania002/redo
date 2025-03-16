@@ -170,6 +170,217 @@ header.shadow #search-icon{
     background-position: center left;
 }
 
+/* --- Modern Home Section --- */
+.modern-home {
+    padding: 80px 0; /* Adjust padding as needed */
+    background-color: #f9f9f9; /* Light background */
+}
+
+.modern-home .home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.modern-home .home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.modern-home .home-text {
+    flex: 1;
+}
+
+.modern-home .hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.modern-home .hero-title .accent {
+    color: var(--primary-color, #007bff); /* Use your primary color */
+}
+
+.modern-home .hero-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.modern-home .company-name {
+    font-weight: bold;
+    color: #444;
+}
+
+.modern-home .new-cars,
+.modern-home .used-cars {
+    color: var(--secondary-color, #28a745); /* Use a secondary color */
+    font-weight: bold;
+}
+
+.modern-home .hero-buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.modern-home .hero-explore-btn {
+    padding: 14px 30px;
+    font-size: 1rem;
+}
+
+.modern-home .link-btn {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary-color, #007bff);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.modern-home .link-btn i {
+    margin-left: 8px;
+    font-size: 1.2rem;
+}
+
+.modern-home .link-btn:hover {
+    color: darken(var(--primary-color, #007bff), 15%);
+}
+
+.modern-home .home-image {
+    flex: 1;
+    position: relative;
+}
+
+.modern-home .car-image-wrapper {
+    overflow: hidden;
+    border-radius: 10px; /* Optional: Rounded corners for image */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.modern-home .hero-car {
+    width: 100%;
+    display: block;
+    transform: scale(1.05); /* Subtle zoom */
+    transition: transform 0.4s ease-in-out;
+}
+
+.modern-home .car-image-wrapper:hover .hero-car {
+    transform: scale(1.1); /* More zoom on hover */
+}
+
+.modern-home .floating-details {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modern-home .detail-box {
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out forwards var(--delay); /* Apply staggered animation */
+}
+
+.modern-home .detail-box i {
+    font-size: 1.5rem;
+    color: var(--primary-color, #007bff);
+}
+
+.modern-home .detail-box span {
+    font-weight: 500;
+    color: #555;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 992px) {
+    .modern-home .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .modern-home .home-image {
+        order: -1; /* Image appears before text on smaller screens */
+        width: 80%;
+        margin: 0 auto 30px;
+    }
+
+    .modern-home .floating-details {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .modern-home .detail-box {
+        transform: translateY(0); /* Remove initial transform on mobile */
+        opacity: 1; /* Make visible by default on mobile */
+        animation: none; /* Disable staggered animation on mobile */
+    }
+
+    .modern-home .hero-buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .modern-home .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .modern-home .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .modern-home .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .modern-home .hero-explore-btn,
+    .modern-home .link-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* --- Animations --- */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}/* ... (your existing CSS) ... */
+
+.hero-title,
+.hero-subtitle,
+.hero-buttons {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.hero-title.animated,
+.hero-subtitle.animated,
+.hero-buttons.animated {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* ... (rest of your CSS) ... */
+
 .home-text{
     padding-left: 130px;
 }

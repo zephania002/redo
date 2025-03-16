@@ -98,6 +98,8 @@ body {
     padding-right: 0;
 }
 
+
+
 /* Adjust logo margin when close button is present */
 .sidebar .logo {
     margin-bottom: 20px; /* Reduce slightly to accommodate close button */

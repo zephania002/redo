@@ -230,3 +230,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const heroTitle = document.querySelector('.hero-title');
+    const heroSubtitle = document.querySelector('.hero-subtitle');
+    const heroButtons = document.querySelector('.hero-buttons');
+
+    // Add a class to trigger the animation
+    if (heroTitle) {
+        setTimeout(() => {
+            heroTitle.classList.add('animated');
+        }, 300);
+    }
+
+    if (heroSubtitle) {
+        setTimeout(() => {
+            heroSubtitle.classList.add('animated');
+        }, 600);
+    }
+
+    if (heroButtons) {
+        setTimeout(() => {
+            heroButtons.classList.add('animated');
+        }, 900);
+    }
+});
